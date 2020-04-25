@@ -14,7 +14,39 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUb-wZ-6po">
+                                <rect key="frame" x="194.66666666666666" y="158" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khc-at-59J">
+                                <rect key="frame" x="194.66666666666666" y="358" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuS-CA-vaP">
+                                <rect key="frame" x="158" y="187" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KW-KB-Ige">
+                                <rect key="frame" x="160.66666666666666" y="387" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="khc-at-59J" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5q5-Ep-DaP"/>
+                            <constraint firstItem="1KW-KB-Ige" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CIX-jh-Trd"/>
+                            <constraint firstItem="yuS-CA-vaP" firstAttribute="top" secondItem="hUb-wZ-6po" secondAttribute="bottom" constant="8" id="F6W-5n-b5O"/>
+                            <constraint firstItem="hUb-wZ-6po" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="Waj-9m-iNn"/>
+                            <constraint firstItem="hUb-wZ-6po" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cvG-gk-DSd"/>
+                            <constraint firstItem="yuS-CA-vaP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nlk-zE-hi5"/>
+                            <constraint firstItem="1KW-KB-Ige" firstAttribute="top" secondItem="khc-at-59J" secondAttribute="bottom" constant="8" id="ogC-BW-D8f"/>
+                            <constraint firstItem="khc-at-59J" firstAttribute="top" secondItem="yuS-CA-vaP" secondAttribute="bottom" constant="141" id="p73-gv-BRq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
